@@ -1,9 +1,10 @@
 Package.describe({
   summary: "Microsoft OAuth flow",
-  version: "0.0.1",
+  version: "0.0.2",
 });
 
 Package.onUse((api) => {
+  api.use("accounts-base@2.2.6", ["server"]);
   api.use("ecmascript", ["client", "server"]);
   api.use("oauth2", ["client", "server"]);
   api.use("oauth", ["client", "server"]);

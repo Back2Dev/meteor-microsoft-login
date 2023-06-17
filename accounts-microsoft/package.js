@@ -1,11 +1,11 @@
 Package.describe({
   summary: "Login service for Microsoft accounts",
-  version: "0.0.1",
+  version: "0.0.2",
 });
 
 Package.onUse((api) => {
   api.use("ecmascript");
-  api.use("accounts-base", ["client", "server"]);
+  api.use("accounts-base@2.2.6", ["client", "server"]);
   // Export Accounts (etc) to packages using this one.
   api.imply("accounts-base", ["client", "server"]);
 
